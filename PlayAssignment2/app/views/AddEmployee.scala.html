@@ -1,0 +1,17 @@
+@(addForm:Form[(String,String,Date,Date,String)])(implicit msg:Messages)
+@import b3.vertical.fieldConstructor
+@import java.util.Date
+@views.html.main("Login"){
+
+
+@b3.form(routes.AddEmployeeController.addEmployee) {
+@b3.text( addForm("Name"), '_label -> "Name", 'placeholder -> "john" )
+@b3.text( addForm("address"), '_label -> "address", 'placeholder -> "NYC" )
+@b3.date.parse( addForm("dateOfBirth"))
+@b3.date.parse(addForm("dateOfJoining"))
+@b3.text(addForm("designation"))
+
+<input class= "btn" type="submit" value="LogIn" style="background-color:orange"/> or
+<button class="btn btn-default"> Cancel </button>
+}
+}

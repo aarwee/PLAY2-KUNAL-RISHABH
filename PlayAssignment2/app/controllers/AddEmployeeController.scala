@@ -23,8 +23,8 @@ class AddEmployeeController extends Controller {
     )
   )
 
-  def employee = Action{
-    Ok(views.html.employee(addForm))
+  def showEmployeeForm = Action{ implicit request =>
+    Ok(views.html.AddEmployee(addForm))
   }
 
 }
