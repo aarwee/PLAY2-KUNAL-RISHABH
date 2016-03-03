@@ -14,7 +14,6 @@ libraryDependencies ++= Seq(
   "org.webjars" %% "webjars-play" % "2.4.0-1",
   "org.webjars" % "bootstrap" % "3.1.1-2",
   "com.adrianhurt" %% "play-bootstrap" % "1.0-P24-B3-SNAPSHOT"
-
 )
 
 resolvers += "scalaz-bintray" at "http://dl.bintray.com/scalaz/releases"
